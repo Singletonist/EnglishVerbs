@@ -1,16 +1,105 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.aloner.core.MainActivity">
+<RelativeLayout
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#999b98"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <LinearLayout
+    android:id="@+id/head"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp">
 
     <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+      android:id="@+id/head_word"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/word"
+      android:layout_weight="2"
+      android:gravity="center"/>
 
+    <TextView
+      android:id="@+id/head_tense"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/tense"
+      android:layout_weight="1"
+      android:gravity="center"/>
+  </LinearLayout>
+  <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#FF0000FF"
+    android:layout_below="@id/head"
+    />
+
+  <LinearLayout
+    android:id="@+id/neck"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/head"
+    android:layout_marginTop="5dp">
+
+    <TextView
+      android:id="@+id/neck_hiscore"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/hiscore"
+      android:layout_marginLeft="30dp"
+      android:layout_weight="1"/>
+
+    <TextView
+      android:id="@+id/neck_hiscore_value"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/hiscore_value"
+      android:layout_marginLeft="10dp"
+      android:layout_weight="1"/>
+
+    <TextView
+      android:id="@+id/neck_score"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/score"
+      android:layout_weight="1"/>
+
+    <TextView
+      android:id="@+id/neck_score_value"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/score_value"
+      android:layout_weight="1"/>
+  </LinearLayout>
+  <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#FF0000FF"
+    android:layout_below="@id/neck"
+    />
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:id="@+id/body"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/neck"
+    android:layout_above="@+id/leg"
+    style="@style/AppTheme">
+  </LinearLayout>
+
+  <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#FF0000FF"
+    android:layout_below="@id/body"
+    />
+
+  <ProgressBar
+    android:id="@+id/leg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"/>
 </RelativeLayout>
