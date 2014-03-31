@@ -1,0 +1,78 @@
+<TableLayout
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/admin_present_simple"
+      android:id="@+id/admin_present_simple"/>
+
+    <EditText
+      android:hint="@string/admin_present_simple"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/admin_present_simple_value"
+      android:layout_weight="1"/>
+
+  </TableRow>
+
+  <TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/admin_past_simple"
+      android:id="@+id/admin_past_simple"/>
+
+    <EditText
+      android:hint="@string/admin_past_simple"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/admin_past_simple_value"
+      android:layout_weight="1"/>
+  </TableRow>
+
+  <TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/admin_present_perfect"
+      android:id="@+id/admin_present_perfect"/>
+
+    <EditText
+      android:hint="@string/admin_present_perfect"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/admin_present_perfect_value"
+      android:layout_weight="1"/>
+  </TableRow>
+
+  <TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/admin_translation"
+      android:id="@+id/admin_translation"/>
+
+    <EditText
+      android:hint="@string/admin_translation"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/admin_translation_value"
+      android:layout_weight="1"/>
+  </TableRow>
+</TableLayout>
