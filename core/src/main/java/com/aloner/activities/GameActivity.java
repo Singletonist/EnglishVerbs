@@ -5,7 +5,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -27,12 +26,7 @@ public class GameActivity extends ActionBarActivity
     body = (LinearLayout) findViewById(R.id.body);
     TextView tense = (TextView) findViewById(R.id.head_tense);
     Item item = new Item();
-//    item.setPresentSimple("go");
-//    item.setPastSimple("went");
-//    item.setPresentPerfect("gone");
-//    item.setTranslation("іти");
     itemService.createItem(item);
-//    String presentSimple = itemService.createItem(item).getPresentSimple();
     item = itemService.getAllItems().get(0);
     TextView word = (TextView) findViewById(R.id.head_word);
     tense.setText("pastSimple");
@@ -41,10 +35,6 @@ public class GameActivity extends ActionBarActivity
     TextView textView = new TextView(this);
     textView.setText(item.getTranslation());
     body.addView(textView);
-    Button button = new Button(this);
-    button.setText("Admin");
-    body.addView(button);
-    TextView textView1 = (TextView) findViewById(R.id.head_word);
     View.OnClickListener listener = new View.OnClickListener()
     {
       @Override
