@@ -3,9 +3,9 @@ package com.aloner.object;
 public class Verb
 {
   private int id;
-  private String presentSimple;
+  private String infinitive;
   private String pastSimple;
-  private String presentPerfect;
+  private String pastParticiple;
   private String translation;
 
   public int getId()
@@ -18,14 +18,14 @@ public class Verb
     this.id = id;
   }
 
-  public String getPresentSimple()
+  public String getInfinitive()
   {
-    return presentSimple;
+    return infinitive;
   }
 
-  public void setPresentSimple(String presentSimple)
+  public void setInfinitive(String infinitive)
   {
-    this.presentSimple = presentSimple;
+    this.infinitive = infinitive;
   }
 
   public String getPastSimple()
@@ -40,12 +40,12 @@ public class Verb
 
   public String getPresentPerfect()
   {
-    return presentPerfect;
+    return pastParticiple;
   }
 
-  public void setPresentPerfect(String presentPerfect)
+  public void setPresentPerfect(String pastParticiple)
   {
-    this.presentPerfect = presentPerfect;
+    this.pastParticiple = pastParticiple;
   }
 
   public String getTranslation()

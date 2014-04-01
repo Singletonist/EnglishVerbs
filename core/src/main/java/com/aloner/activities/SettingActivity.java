@@ -1,10 +1,9 @@
 package com.aloner.activities;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import com.aloner.core.R;
+import android.support.v7.app.ActionBarActivity;
+
+import com.aloner.R;
 
 public class SettingActivity extends ActionBarActivity {
 

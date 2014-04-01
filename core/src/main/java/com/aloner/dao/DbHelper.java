@@ -16,9 +16,9 @@ public class DbHelper  extends SQLiteOpenHelper
 {
   public static final String TABLE_VERBS = "verbs";
   public static final String COLUMN_ID = "_id";
-  public static final String COLUMN_PRESENT_SIMPLE = "present_simple";
+  public static final String COLUMN_INFINITIVE = "infinitive";
   public static final String COLUMN_PAST_SIMPLE = "past_simple";
-  public static final String COLUMN_PRESENT_PERFECT = "present_perfect";
+  public static final String COLUMN_PAST_PARTICIPLE = "past_participle";
   public static final String COLUMN_TRANSLATION = "translation";
   private static final String DATABASE_NAME = "TheEnglish.db";
   private static final int DATABASE_VERSION = 1;

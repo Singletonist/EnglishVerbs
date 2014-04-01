@@ -7,13 +7,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <TextView
-      android:id="@+id/admin_present_simple"
-      android:text="@string/admin_present_simple"
+      android:id="@+id/admin_infinitive"
+      android:text="@string/admin_infinitive"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"/>
     <EditText
-      android:id="@+id/admin_present_simple_value"
-      android:hint="@string/admin_present_simple"
+      android:id="@+id/admin_infinitive_value"
+      android:hint="@string/admin_infinitive"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:layout_weight="1"/>
@@ -39,13 +39,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <TextView
-      android:id="@+id/admin_present_perfect"
-      android:text="@string/admin_present_perfect"
+      android:id="@+id/admin_past_participle"
+      android:text="@string/admin_past_participle"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"/>
     <EditText
-      android:id="@+id/admin_present_perfect_value"
-      android:hint="@string/admin_present_perfect"
+      android:id="@+id/admin_past_participle_value"
+      android:hint="@string/admin_past_participle"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_weight="1"/>
@@ -68,8 +68,8 @@
   </TableRow>
 
   <Button
-    android:id="@+id/add_to_db"
-    android:text="@string/add_to_db"
+    android:id="@+id/save_verb"
+    android:text="@string/save_verb"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" />
 

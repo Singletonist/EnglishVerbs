@@ -6,7 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.aloner.core.R;
+import com.aloner.R;
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener
 {
