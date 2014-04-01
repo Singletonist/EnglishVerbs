@@ -19,20 +19,20 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
-    android:layout_above="@+id/settings_button"/>
+    android:layout_above="@+id/setting_button"/>
   <Button
-    android:id="@+id/settings_button"
+    android:id="@+id/setting_button"
     android:text="@string/setting_button"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"/>
   <Button
-    android:id="@+id/info"
+    android:id="@+id/info_button"
     android:text="@string/info_button"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
-    android:layout_below="@+id/settings_button"
+    android:layout_below="@+id/setting_button"
     />
 </RelativeLayout>

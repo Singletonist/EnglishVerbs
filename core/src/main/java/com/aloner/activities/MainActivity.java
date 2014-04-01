@@ -1,10 +1,8 @@
 package com.aloner.activities;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -14,6 +12,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 {
   Button start_button;
   Button admin_button;
+  Button setting_button;
+  Button info_button;
 
   @Override
   protected void onCreate(Bundle savedInstanceState)
@@ -22,39 +22,35 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     setContentView(R.layout.activity_main);
     start_button = (Button) findViewById(R.id.start_button);
     admin_button = (Button) findViewById(R.id.admin_button);
+    setting_button = (Button) findViewById(R.id.setting_button);
+    info_button = (Button) findViewById(R.id.info_button);
     start_button.setOnClickListener(this);
     admin_button.setOnClickListener(this);
-  }
-
-  @Override
-  public boolean onCreateOptionsMenu(Menu menu)
-  {
-    getMenuInflater().inflate(R.menu.main, menu);
-    return true;
-  }
-
-  @Override
-  public boolean onOptionsItemSelected(MenuItem item)
-  {
-    int id = item.getItemId();
-    if (id == R.id.action_settings) {
-      return true;
-    }
-    return super.onOptionsItemSelected(item);
+    setting_button.setOnClickListener(this);
+    info_button.setOnClickListener(this);
   }
 
   @Override
   public void onClick(View view)
   {
+    Intent intent;
     switch (view.getId())
     {
       case  R.id.start_button:
-        Intent intent = new Intent(this, GameActivity.class);
+        intent = new Intent(this, GameActivity.class);
         startActivity(intent);
         break;
       case R.id.admin_button:
-        Intent intent2 = new Intent(this, AdminActivity.class);
-        startActivity(intent2);
+        intent = new Intent(this, AdminActivity.class);
+        startActivity(intent);
+        break;
+      case  R.id.setting_button:
+        intent = new Intent(this, SettingActivity.class);
+        startActivity(intent);
+        break;
+      case R.id.info_button:
+        intent = new Intent(this, InfoActivity.class);
+        startActivity(intent);
         break;
       default:
         break;

@@ -1,6 +1,6 @@
 package com.aloner.object;
 
-public class Item
+public class Verb
 {
   private int id;
   private String presentSimple;

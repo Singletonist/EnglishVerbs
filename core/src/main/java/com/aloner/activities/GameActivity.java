@@ -9,14 +9,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.aloner.core.R;
-import com.aloner.object.Item;
-import com.aloner.service.ItemService;
+import com.aloner.object.Verb;
+import com.aloner.service.VerbService;
 
 
 public class GameActivity extends ActionBarActivity
 {
   LinearLayout body;
-  ItemService itemService = new ItemService(this);
 
   @Override
   protected void onCreate(Bundle savedInstanceState)
@@ -25,15 +24,14 @@ public class GameActivity extends ActionBarActivity
     setContentView(R.layout.activity_game);
     body = (LinearLayout) findViewById(R.id.body);
     TextView tense = (TextView) findViewById(R.id.head_tense);
-    Item item = new Item();
-    itemService.createItem(item);
-    item = itemService.getAllItems().get(0);
+    VerbService verbService = new VerbService(this);
+    Verb verb = verbService.getAllVerbs().get(0);
     TextView word = (TextView) findViewById(R.id.head_word);
     tense.setText("pastSimple");
-    word.setText(item.getPresentSimple());
+    word.setText(verb.getPresentSimple());
 
     TextView textView = new TextView(this);
-    textView.setText(item.getTranslation());
+    textView.setText(verb.getTranslation());
     body.addView(textView);
     View.OnClickListener listener = new View.OnClickListener()
     {
@@ -44,23 +42,5 @@ public class GameActivity extends ActionBarActivity
       }
     };
     textView.setOnClickListener(listener);
-  }
-
-  @Override
-  public boolean onCreateOptionsMenu(Menu menu)
-  {
-    getMenuInflater().inflate(R.menu.main, menu);
-    return true;
-  }
-
-  @Override
-  public boolean onOptionsItemSelected(MenuItem item)
-  {
-    int id = item.getItemId();
-    if (id == R.id.action_settings)
-    {
-      return true;
-    }
-    return super.onOptionsItemSelected(item);
   }
 }

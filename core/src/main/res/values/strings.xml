@@ -21,5 +21,9 @@
   <string name="setting_button">Setting</string>
   <string name="info_button">Info</string>
   <string name="add_to_db">Save</string>
+  <string name="title_activity_setting">SettingActivity</string>
+  <string name="title_activity_info">InfoActivity</string>
+  <string name="info">INFO</string>
+  <string name="setting">SETTING</string>
 
 </resources>
